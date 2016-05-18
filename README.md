@@ -1,7 +1,9 @@
 # Accurate Image Super-Resolution Using Very Deep Convolutional Networks(http://arxiv.org/abs/1511.04587)
 
 Implemented in Torch
+
 Yields the same performance with paper
+
 Used 91 training images and set5 test images according to the paper
 
 
