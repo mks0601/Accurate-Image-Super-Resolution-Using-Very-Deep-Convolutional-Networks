@@ -13,7 +13,7 @@ inputDim = 1
 outputDim = 1
 fDim = 64
 n = 18
-lr_theta = 25e-4 --2e-3
+lr_theta = 2e-3
 
 
 lr = 1e-1

@@ -2,7 +2,7 @@
 includeBSD = true;
 folder = '~/workspace/Data/SR/Train';
 size_input = 41;
-stride = 41;
+stride = 20;
 
 
 %% generate data
