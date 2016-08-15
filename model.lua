@@ -24,6 +24,7 @@ model:add(nn.SpatialBatchNormalization(outputDim))
 
 criterion = nn.MSECriterion()
 criterion.sizeAverage = false
+
 --print(model)
 
 cudnn.convert(model, cudnn)

@@ -76,7 +76,8 @@ function train(trainData, trainLabel)
            err = err/curBatchDim
            tot_error = tot_error + err
            cnt_error = cnt_error + 1
-
+            
+           gradParams:div(curBatchDim)
            gradParams:clamp(-lr_theta/optimState.learningRate,lr_theta/optimState.learningRate)
            return err,gradParams
         end
