@@ -71,9 +71,9 @@ function train(trainData, trainLabel)
 
            gradParams:zero()
            local output = model:forward(inputs)
-           local err = criterion:forward(output,targets)
-           model:backward(inputs,criterion:backward(output,targets))
-           err = err/curBatchDim
+           local err = criterion:forward(output,targets)/curBatchDim
+           local dfdo = criterion:backward(output,targets)/curBatchDim
+           model:backward(inputs,dfdo)
            tot_error = tot_error + err
            cnt_error = cnt_error + 1
             

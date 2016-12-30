@@ -3,6 +3,8 @@ modelName = "model.net"
 
 
 db_dir = "/media/sda1/Data/SR/"
+train_dir = db_dir .. "Train/parsed/"
+test_dir = db_dir .. "Test/Set5/parsed_Y/"
 save_dir = db_dir .. "model_save/"
 testDataSz = 5
 trainScale = {2}

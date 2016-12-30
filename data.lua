@@ -10,8 +10,8 @@ function load_data()
     
     for sid,scale in pairs(trainScale) do 
     
-        fnameX = db_dir .. "trainX_" .. scale .. ".bin"
-        fnameY = db_dir .. "trainY_" .. scale .. ".bin"
+        fnameX = train_dir .. "trainX_" .. scale .. ".bin"
+        fnameY = train_dir .. "trainY_" .. scale .. ".bin"
         print("trainDB loading... scale: " .. scale)
         
         local fpX = torch.DiskFile(fnameX,"r"):binary()

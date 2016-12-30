@@ -14,9 +14,9 @@ end
 
 local function loadTestData(id)
     
-    fnameX = db_dir .. 'testX' .. id .. '_' .. testScale .. '.bin'
-    fnameY = db_dir .. 'testY' .. id .. '_' .. testScale .. '.bin'
-    fnameSize = db_dir .. 'testSize' .. id .. '_' .. testScale .. '.txt'
+    fnameX = test_dir .. 'testX' .. id .. '_' .. testScale .. '.bin'
+    fnameY = test_dir .. 'testY' .. id .. '_' .. testScale .. '.bin'
+    fnameSize = test_dir .. 'testSize' .. id .. '_' .. testScale .. '.txt'
 
     local fpX = torch.DiskFile(fnameX,"r"):binary()
     local fpY = torch.DiskFile(fnameY,"r"):binary()

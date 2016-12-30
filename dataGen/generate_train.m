@@ -1,5 +1,4 @@
 %% settings
-includeBSD = true;
 folder = '~/workspace/Data/SR/Train';
 size_input = 41;
 stride = 41;
@@ -7,7 +6,6 @@ stride = 41;
 
 %% generate data
 filepaths = dir(fullfile(folder,'*.bmp'));
-filepathsBSD = dir(fullfile(strcat(folder,'/BSD300'),'*.jpg'));
 
 for scale = 2:4
     
@@ -17,10 +15,6 @@ label = zeros(size_input, size_input, 1, 1);
 count = 0;
 
 [count, data, label] = extractPatch(count, data, label, scale, stride, size_input, filepaths, folder);
-
-if includeBSD == true
-   [count, data, label] = extractPatch(count, data, label, scale, stride, size_input, filepathsBSD, strcat(folder,'/BSD300'));
-end
 
 
 order = randperm(count);
