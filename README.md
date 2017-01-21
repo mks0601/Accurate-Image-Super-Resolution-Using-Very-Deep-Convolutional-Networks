@@ -5,8 +5,9 @@ http://arxiv.org/abs/1511.04587
 Implemented in Torch
 
 ##Start
+```
 th run_me.lua
-
+```
 ##Result
 scale\PSNR | me | paper
 ------------ | ------------- | -------------
